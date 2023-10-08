@@ -4,8 +4,8 @@
 header {
     position: sticky;
     width: 100%;
-    top: 0
-    /*background: rgba(230, 206, 170, 0.4);*/
+    top: 0;
+    /*background: rgba(230, 206, 170, 1);*/
 }
 
 .homepage {
@@ -13,10 +13,12 @@ header {
     justify-content: center;
     margin-top: 7rem;
     margin-bottom: 11rem;
+    flex-wrap: wrap;
 }
 
 body {
     background-color: rgba(230, 206, 170, .4);
+    /*margin: 0;*/
 }
 
 a {
@@ -121,6 +123,10 @@ p {
     height: 120px;
 }
 
+.container {
+    margin-bottom: 5rem;
+}
+
 .button {
     display: inline-block;
     border-radius: 5px;
@@ -144,6 +150,7 @@ p {
 .steps {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .step {
@@ -181,6 +188,7 @@ h2 {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 8rem;
+    flex-wrap: wrap;
 }
 
 .about p {
@@ -193,6 +201,7 @@ h2 {
     height: 433px;
     margin-top: 1rem;
     margin-right: 3rem;
+    margin-bottom: 5rem;
 }
 
 .icons {
@@ -290,14 +299,22 @@ footer p {
     text-align: center;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .info {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    margin-left: 0.5rem;
+    /*align-items: center;*/
 }
 
 .social_networks {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
