@@ -55,13 +55,24 @@ nav {
 }
 
 .right {
+    display: flex;
+    align-items: center;
     text-align: right;
     padding: 10px 10px 20px 20px
 }
 
 .right a {
-    margin: 0 10px;
-    padding: 20px
+    margin-left: 4rem;
+}
+
+a.help {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.right span {
+    margin-left: 0.5rem;
 }
 
 h1 {
@@ -81,7 +92,7 @@ h1 {
 
 .paw {
     width: 20px;
-    height: 22.8px;
+    height: 23px;
     rotate: 8grad;
 }
 
@@ -116,7 +127,7 @@ p {
     padding: 16px 30px 17px;
     font-size: 16px;
     box-shadow: 0 1px 4px rgba(0,0,0,.1),0 2px 4px rgba(0,0,0,.1);
-    font-family: "Merriweather",sans-serif;
+    font-family: "Merriweather", sans-serif;
     font-weight: 400;
 }
 
@@ -140,7 +151,7 @@ p {
     text-align: center;
 }
 
-.imageBox {
+.stepImageBox {
     border-radius: 23px;
     height: 16rem;
     width: 16rem;
@@ -169,6 +180,7 @@ h2 {
 .about {
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 8rem;
 }
 
 .about p {
@@ -183,12 +195,78 @@ h2 {
     margin-right: 3rem;
 }
 
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sex {
+    width: 42px;
+    height: 40px;
+}
+
+.heart {
+    width: 24px;
+    height: 24px;
+}
+
+.condition {
+    width: 26px;
+    height: 26px;
+}
+
+.petImageBox {
+    border-radius: 23px;
+    height: 20rem;
+    width: 25rem;
+    background-color: rgba(230, 206, 170, 0.4);
+}
+
+.cats span {
+    font-weight: 400;
+    font-size: 22px;
+    color: #202020;
+    line-height: 1.6;
+    opacity: 0.9;
+    font-family: "Merriweather", sans-serif;
+    width: 25rem;
+    text-align: center;
+}
+
+.cats span.name {
+    margin-top: 1rem;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -.036em;
+    /*line-height: 1.1;*/
+}
+
+.pet {
+    margin-right: 2rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cats h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 /*.about h2 {*/
 /*    margin-bottom: 2rem;*/
 /*}*/
 
 footer {
-    margin-top: 10rem;
+    margin-top: 8rem;
     margin-bottom: 2rem;
 }
 
@@ -200,7 +278,7 @@ footer h6 {
     opacity: .4;
     text-transform: uppercase;
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 footer p {
@@ -223,7 +301,7 @@ footer p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*align-items: center;*/
+    align-items: center;
 }
 
 .social_circles {
