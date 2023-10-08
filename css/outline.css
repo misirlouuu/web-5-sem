@@ -2,13 +2,14 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&display=swap');*/
 
 header {
-    position: fixed;
+    position: sticky;
     width: 100%;
+    top: 0
     /*background: rgba(230, 206, 170, 0.4);*/
 }
 
 main {
-    padding-top: 10rem;
+    padding-top: 11rem;
 }
 
 body {
