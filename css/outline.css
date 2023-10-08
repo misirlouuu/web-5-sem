@@ -8,8 +8,11 @@ header {
     /*background: rgba(230, 206, 170, 0.4);*/
 }
 
-main {
-    padding-top: 11rem;
+.homepage {
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+    margin-bottom: 11rem;
 }
 
 body {
@@ -26,7 +29,7 @@ a {
 nav {
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
     font-size: 12px;
     letter-spacing: .125em;
     font-weight: 600;
@@ -91,19 +94,14 @@ p {
     margin-left: 150px;
 }
 
-.container h1 {
+.homepage h1 {
     width: 540px;
     height: 120px;
 }
 
-.container p {
+.homepage p {
     width: 540px;
     height: 120px;
-}
-
-.homepage {
-    display: flex;
-    justify-content: center;
 }
 
 .button {
@@ -126,8 +124,66 @@ p {
     color: #202020;
 }
 
+.steps {
+    display: flex;
+    justify-content: space-between;
+}
+
+.step {
+    margin: 2rem;
+    text-align: center;
+}
+
+.imageBox {
+    border-radius: 23px;
+    height: 16rem;
+    width: 16rem;
+    background-color: rgba(230, 206, 170, 0.4);
+}
+
+h2 {
+    font-size: 48px;
+    font-family: "Merriweather", sans-serif;
+    font-weight: 700;
+    letter-spacing: -.036em;
+    color: #202020;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.how_to h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.how_to {
+    margin-bottom: 8rem;
+}
+
+.about {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about p {
+    width: 644px;
+    height: 415px;
+}
+
+.dog {
+    width: 462px;
+    height: 433px;
+    margin-top: 1rem;
+    margin-right: 3rem;
+}
+
+/*.about h2 {*/
+/*    margin-bottom: 2rem;*/
+/*}*/
+
 footer {
     margin-top: 10rem;
+    margin-bottom: 2rem;
 }
 
 footer h6 {
@@ -138,6 +194,7 @@ footer h6 {
     opacity: .4;
     text-transform: uppercase;
     text-align: center;
+    font-size: 12px;
 }
 
 footer p {
@@ -158,8 +215,9 @@ footer p {
 
 .social_networks {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /*align-items: center;*/
 }
 
 .social_circles {
