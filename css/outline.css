@@ -79,6 +79,12 @@ h1 {
     height: 55px;
 }
 
+.paw {
+    width: 20px;
+    height: 22.8px;
+    rotate: 8grad;
+}
+
 p {
     color: #202020;
     font-family: "Merriweather", sans-serif;
@@ -229,4 +235,5 @@ footer p {
 .icon {
     width: 40px;
     height: 48px;
+    margin-right: 0.5rem;
 }
