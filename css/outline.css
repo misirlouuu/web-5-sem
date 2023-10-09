@@ -205,7 +205,7 @@ p {
     content: "";
     right: 0;
     bottom: 0;
-    background-color: #202020;
+    background-color: rgba(32, 32, 32, 0.8);
     transition: all 0.4s ease;
 }
 
@@ -221,7 +221,7 @@ p {
     content: "";
     left: 0;
     top: 0;
-    background-color: #202020;
+    background-color: rgba(32, 32, 32, 0.8);
     transition: all 0.4s ease;
 }
 
