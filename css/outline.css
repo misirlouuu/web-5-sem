@@ -1,5 +1,5 @@
-
-/*@import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 header {
     position: sticky;
@@ -56,6 +56,7 @@ nav {
     flex-direction: column;
     width: 13rem;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .right {
@@ -109,6 +110,18 @@ p {
     opacity: 0.9;
 }
 
+.information p {
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+.information {
+    margin-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 55vw;
+}
+
 .cat {
     width: 560px;
     height: 461px;
@@ -135,7 +148,7 @@ p {
     border-radius: 5px;
     padding: 16px 30px 17px;
     font-size: 16px;
-    box-shadow: 0 1px 4px rgba(0,0,0,.1), 0 2px 4px rgba(0,0,0,.1);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .1), 0 2px 4px rgba(0, 0, 0, .1);
     font-family: "Merriweather", sans-serif;
     font-weight: 400;
     border: none;
@@ -190,6 +203,7 @@ p {
     border-radius: 2rem;
     height: 100%;
 }
+
 .volunteer span:hover:after, .volunteer:hover:after {
     border-radius: 2rem;
     width: 100%;
@@ -241,6 +255,7 @@ p {
     border-radius: 2rem;
     height: 100%;
 }
+
 .donation span:hover:after, .donation:hover:after {
     border-radius: 2rem;
     width: 100%;
@@ -265,7 +280,9 @@ p {
 }
 
 @keyframes pulse {
-    0% { box-shadow: 0 0 0 0 cadetblue; }
+    0% {
+        box-shadow: 0 0 0 0 cadetblue;
+    }
 }
 
 .step {
@@ -294,6 +311,16 @@ h2 {
     font-size: 48px;
     font-family: "Merriweather", sans-serif;
     font-weight: 700;
+    letter-spacing: -.036em;
+    color: #202020;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 28px;
+    font-family: "Merriweather", sans-serif;
+    font-weight: 400;
     letter-spacing: -.036em;
     color: #202020;
     line-height: 1.1;
@@ -416,7 +443,7 @@ svg {
 }
 
 .pet.favorite {
-     background: rgba(237, 205, 205, 0.3);
+    background: rgba(237, 205, 205, 0.3);
 }
 
 /*.pet.favorite i svg {*/
@@ -527,6 +554,23 @@ footer {
     height: 48px;
     margin-right: 0.5rem;
 }
+
+.delay-200 {
+    transition-delay: .2s
+}
+
+.fromLeft {
+    transition: all .7s ease;
+    opacity: 0;
+    transform: translateX(-30px)
+}
+
+.fromLeft-animate {
+    opacity: 1;
+    transform: translateX(0)
+}
+
+
 
 
 
