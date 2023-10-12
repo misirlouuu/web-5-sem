@@ -51,7 +51,7 @@ nav {
     border-bottom: 1px solid rgba(0, 0, 0, .07);
     grid-template-columns: 2fr 1fr 2fr;
     grid-auto-rows: 8vh;
-    height:  8vh;
+    height: 8vh;
     width: 100vw;
     z-index: 3;
 
@@ -79,7 +79,7 @@ nav {
     display: flex;
     align-items: center;
     text-align: right;
-    padding: 10px 10px 20px 20px
+    padding: 1.5em 1.5em 2em 2em
 }
 
 .right a {
@@ -104,12 +104,12 @@ h1 {
     letter-spacing: -.036em;
     color: #202020;
     line-height: 1.1;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
 .logo {
-    width: 55px;
-    height: 55px;
+    width: 5em;
+    height: 5em;
 }
 
 .paw {
@@ -132,32 +132,35 @@ p {
     margin-bottom: 1rem;
 }
 
-.information {
-    margin-top: 6rem;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 55vw;
-    margin-bottom: 20rem;
-}
+/*.information {*/
+/*    margin-top: 6rem;*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+/*    max-width: 1vw;*/
+/*    margin-bottom: 20rem;*/
+/*}*/
 
 .cat {
     width: 560px;
     height: 461px;
-    margin-left: 150px;
+    /*margin-left: 150px;*/
 }
 
 .homepage h1 {
-    width: 540px;
-    height: 120px;
+    width: 40vw;
+    height: 14vh;
+    /*margin-bottom: 2rem;*/
 }
 
 .homepage p {
-    width: 540px;
-    height: 120px;
+    width: 35vw;
+    height: 14vh;
 }
 
 .container {
+    margin-left: 2rem;
     margin-bottom: 5rem;
+    margin-right: 7rem;
 }
 
 .button {
@@ -177,7 +180,7 @@ p {
 .volunteer {
     background-color: #202020;
     color: #fff;
-    margin-right: 20px;
+    margin-right: 1rem;
     padding: 0;
     line-height: 3.5rem;
 }
@@ -332,7 +335,7 @@ h2 {
     letter-spacing: -.036em;
     color: #202020;
     line-height: 1.1;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
 h3 {
@@ -342,7 +345,7 @@ h3 {
     letter-spacing: -.036em;
     color: #202020;
     line-height: 1.1;
-    margin-bottom: 20px;
+    /*margin-bottom: 1rem;*/
 }
 
 .how_to h2 {
@@ -363,8 +366,8 @@ h3 {
 }
 
 .about p {
-    width: 644px;
-    height: 415px;
+    width: 45vw;
+    height: 40vh;
 }
 
 .dog {
