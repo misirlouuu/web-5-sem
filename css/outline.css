@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 header {
     position: sticky;
-    width: 100%;
+    width: 100vw;
     top: 0;
     /*background: rgba(230, 206, 170, 1);*/
 }
@@ -17,9 +21,13 @@ header {
 }
 
 body {
+    overflow-x: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     background-color: rgba(230, 206, 170, .4);
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     /*margin: 0;*/
 }
 
@@ -41,8 +49,14 @@ nav {
     font-family: Lato, sans-serif;
     color: #202020;
     border-bottom: 1px solid rgba(0, 0, 0, .07);
-    top: 0;
-    left: 0;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-auto-rows: 8vh;
+    height:  8vh;
+    width: 100vw;
+    z-index: 3;
+
+    /*top: 0;*/
+    /*left: 0;*/
 }
 
 .left {
@@ -267,7 +281,7 @@ p {
 
 .steps {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -334,6 +348,7 @@ h3 {
 .how_to h2 {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .how_to {
