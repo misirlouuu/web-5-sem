@@ -41,6 +41,8 @@ nav {
     font-family: Lato, sans-serif;
     color: #202020;
     border-bottom: 1px solid rgba(0, 0, 0, .07);
+    top: 0;
+    left: 0;
 }
 
 .left {
@@ -68,6 +70,7 @@ nav {
 
 .right a {
     margin-left: 4rem;
+    /*width: auto;*/
 }
 
 a.help {
@@ -120,6 +123,7 @@ p {
     margin-left: auto;
     margin-right: auto;
     max-width: 55vw;
+    margin-bottom: 20rem;
 }
 
 .cat {
@@ -532,6 +536,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     margin-left: 0.5rem;
+    flex-wrap: wrap;
     /*align-items: center;*/
 }
 
@@ -559,6 +564,18 @@ footer {
     transition-delay: .2s
 }
 
+.delay-300 {
+    transition-delay:.3s
+}
+
+.delay-400 {
+    transition-delay:.4s
+}
+
+.delay-500 {
+    transition-delay:.5s
+}
+
 .fromLeft {
     transition: all .7s ease;
     opacity: 0;
@@ -568,6 +585,17 @@ footer {
 .fromLeft-animate {
     opacity: 1;
     transform: translateX(0)
+}
+
+.text-block {
+    transition: all .7s ease;
+    opacity: 0;
+    transform:translateY(40px);
+}
+
+.text-block-animate {
+    opacity: 1;
+    transform:translateY(0)
 }
 
 
