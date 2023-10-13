@@ -20,6 +20,8 @@ body {
 
 main {
     width: 100vw;
+    border-left-color: fuchsia;
+    border-right-color: darkgreen;
 }
 
 footer {
@@ -89,7 +91,8 @@ nav {
     display: flex;
     align-items: center;
     text-align: right;
-    padding: 1em 1em 2em 2em
+    padding: 1em 1em 2em 2em;
+    background-color: fuchsia;
 }
 
 .right a {
