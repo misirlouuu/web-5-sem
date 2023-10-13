@@ -44,6 +44,14 @@ header {
     nav .right {
         display: none;
     }
+    .homepage h1 {
+        width: 100%;
+    }
+
+    .cat {
+        width: 540px;
+        height: 421px;
+    }
 }
 
 .homepage {
@@ -174,7 +182,8 @@ p {
 .homepage {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    align-items: center;
+    flex-wrap: wrap-reverse;
 }
 
 .homepage h1 {
@@ -197,6 +206,22 @@ p {
     margin-bottom: 5rem;
     /*width: 38vw;*/
     /*height: 20vh;*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/*.buttons {*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*}*/
+@media screen and (max-width: 1065px) {
+    .homepage h1, .homepage p {
+        width: 80%;
+    }
+    .container {
+        align-content: center;
+    }
 }
 
 .button {
@@ -408,6 +433,20 @@ h3 {
     /*height: 50vh;*/
 }
 
+@media screen and (max-width: 955px) {
+
+    .about_us h2, .about_us p {
+        text-align: center;
+        width: 80%;
+        margin-left: 5rem;
+    }
+
+    .dog {
+        width: 442px;
+        height: 413px;
+    }
+}
+
 .dog {
     width: 462px;
     height: 433px;
@@ -441,8 +480,8 @@ h3 {
     border-radius: 23px;
     height: 18rem;
     width: 23rem;
-    /*background-color: rgba(230, 206, 170, 0.4);*/
-    background-color: white;
+    background-color: rgba(230, 206, 170, 0.4);
+    /*background-color: white;*/
 }
 
 .cats span {
