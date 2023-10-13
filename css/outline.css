@@ -3,6 +3,18 @@
 
 * {
     box-sizing: border-box;
+    outline: solid 1px red;
+}
+
+body {
+    overflow-x: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: rgba(230, 206, 170, .4);
+    width: 100vw;
+    height: 100vh;
+    /*margin: 0;*/
 }
 
 header {
@@ -18,17 +30,6 @@ header {
     margin-top: 7rem;
     margin-bottom: 11rem;
     flex-wrap: wrap;
-}
-
-body {
-    overflow-x: hidden;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    background-color: rgba(230, 206, 170, .4);
-    width: 100vw;
-    height: 100vh;
-    /*margin: 0;*/
 }
 
 a, button {
@@ -79,7 +80,7 @@ nav {
     display: flex;
     align-items: center;
     text-align: right;
-    padding: 1.5em 1.5em 2em 2em
+    padding: 1em 1em 2em 2em
 }
 
 .right a {
@@ -104,7 +105,7 @@ h1 {
     letter-spacing: -.036em;
     color: #202020;
     line-height: 1.1;
-    margin-bottom: 1rem;
+    margin-bottom: 20px;
 }
 
 .logo {
@@ -132,35 +133,32 @@ p {
     margin-bottom: 1rem;
 }
 
-/*.information {*/
-/*    margin-top: 6rem;*/
-/*    margin-left: auto;*/
-/*    margin-right: auto;*/
-/*    max-width: 1vw;*/
-/*    margin-bottom: 20rem;*/
-/*}*/
+.information {
+    margin-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 55vw;
+    margin-bottom: 20rem;
+}
 
 .cat {
     width: 560px;
     height: 461px;
-    /*margin-left: 150px;*/
+    margin-left: 8rem;
 }
 
 .homepage h1 {
-    width: 40vw;
-    height: 14vh;
-    /*margin-bottom: 2rem;*/
+    width: 540px;
+    height: 120px;
 }
 
 .homepage p {
-    width: 35vw;
-    height: 14vh;
+    width: 540px;
+    height: 120px;
 }
 
 .container {
-    margin-left: 2rem;
     margin-bottom: 5rem;
-    margin-right: 7rem;
 }
 
 .button {
@@ -180,7 +178,7 @@ p {
 .volunteer {
     background-color: #202020;
     color: #fff;
-    margin-right: 1rem;
+    margin-right: 20px;
     padding: 0;
     line-height: 3.5rem;
 }
@@ -335,7 +333,7 @@ h2 {
     letter-spacing: -.036em;
     color: #202020;
     line-height: 1.1;
-    margin-bottom: 1rem;
+    margin-bottom: 20px;
 }
 
 h3 {
@@ -345,7 +343,7 @@ h3 {
     letter-spacing: -.036em;
     color: #202020;
     line-height: 1.1;
-    /*margin-bottom: 1rem;*/
+    margin-bottom: 20px;
 }
 
 .how_to h2 {
@@ -366,8 +364,8 @@ h3 {
 }
 
 .about p {
-    width: 45vw;
-    height: 40vh;
+    width: 644px;
+    height: 415px;
 }
 
 .dog {
