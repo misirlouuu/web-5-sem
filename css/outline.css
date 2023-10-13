@@ -431,8 +431,8 @@ h3 {
 
 .petImageBox {
     border-radius: 23px;
-    height: 20rem;
-    width: 25rem;
+    height: 18rem;
+    width: 23rem;
     background-color: rgba(230, 206, 170, 0.4);
 }
 
@@ -459,6 +459,7 @@ h3 {
 .pet {
     border-radius: 23px;
     margin-right: 2rem;
+    margin-left: 2rem;
     margin-bottom: 5rem;
     display: flex;
     flex-direction: column;
