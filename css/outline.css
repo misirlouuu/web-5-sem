@@ -49,8 +49,8 @@ header {
     }
 
     .cat {
-        width: 540px;
-        height: 421px;
+        width: 440px;
+        height: 321px;
     }
 }
 
@@ -442,8 +442,8 @@ h3 {
     }
 
     .dog {
-        width: 442px;
-        height: 413px;
+        width: 402px;
+        height: 383px;
     }
 }
 
@@ -507,7 +507,6 @@ h3 {
 .pet {
     border-radius: 23px;
     margin-right: 2rem;
-    margin-left: 2rem;
     margin-bottom: 5rem;
     display: flex;
     flex-direction: column;
