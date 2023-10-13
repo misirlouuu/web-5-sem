@@ -123,7 +123,7 @@ a.help {
 h1 {
     font-size: 58px;
     font-family: "Merriweather", sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: -.036em;
     color: #202020;
     line-height: 1.1;
@@ -168,29 +168,35 @@ p {
     height: 461px;
     /*width: 50vw;*/
     /*height: 50vh;*/
-    margin-left: 8rem;
+    /*margin-left: 8rem;*/
+}
+
+.homepage {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .homepage h1 {
-    width: 540px;
-    height: 120px;
+    /*width: 540px;*/
+    /*height: 120px;*/
     /*width: 40rem;*/
     /*height: 8rem;*/
+    width: 40vw;
 }
 
 .homepage p {
-    width: 540px;
-    height: 120px;
+    /*width: 540px;*/
+    /*height: 120px;*/
     /*width: 35rem;*/
     /*height: 7rem;*/
+    width: 35vw;
 }
 
 .container {
     margin-bottom: 5rem;
     /*width: 38vw;*/
     /*height: 20vh;*/
-    /*display: flex;*/
-    /*flex-wrap: wrap;*/
 }
 
 .button {
@@ -396,8 +402,10 @@ h3 {
 }
 
 .about p {
-    width: 644px;
-    height: 415px;
+    /*width: 644px;*/
+    /*height: 415px;*/
+    width: 45vw;
+    /*height: 50vh;*/
 }
 
 .dog {
@@ -500,6 +508,10 @@ svg {
     background: rgba(237, 205, 205, 0.3);
 }
 
+/*.about {*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*}*/
 /*.pet.favorite i svg {*/
 /*    fill: cornsilk;*/
 /*}*/
