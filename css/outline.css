@@ -51,6 +51,7 @@ header {
     .cat {
         width: 440px;
         height: 321px;
+        display: none
     }
 }
 
@@ -444,6 +445,7 @@ h3 {
     .dog {
         width: 402px;
         height: 383px;
+        display: none;
     }
 }
 
