@@ -34,7 +34,7 @@ header {
 }
 
 @media screen and (max-width: 1200px) {
-    nav .right {
+    nav .right , nav .left > .description {
         display: none;
     }
 
