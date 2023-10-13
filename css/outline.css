@@ -3,7 +3,6 @@
 
 * {
     box-sizing: border-box;
-    outline: solid 1px red;
 }
 
 body {
@@ -15,13 +14,10 @@ body {
     width: 100vw;
     height: 100vh;
     margin: 0;
-    outline: solid 1px blue;
 }
 
 main {
     width: 100vw;
-    border-left-color: fuchsia;
-    border-right-color: darkgreen;
 }
 
 footer {
