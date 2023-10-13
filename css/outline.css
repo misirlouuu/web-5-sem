@@ -53,8 +53,8 @@ header {
     }
 
     .cat {
-        width: 240px;
-        height: 121px;
+        width: 140px;
+        height: 21px;
         /*display: none*/
     }
 
@@ -452,8 +452,8 @@ h3 {
     }
 
     .dog {
-        width: 252px;
-        height: 233px;
+        width: 152px;
+        height: 133px;
         /*display: none;*/
     }
 }
