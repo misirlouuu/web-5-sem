@@ -36,6 +36,16 @@ header {
     /*background: rgba(230, 206, 170, 1);*/
 }
 
+.burger {
+    display: none;
+}
+
+@media screen and (max-width: 749px) {
+    nav .right {
+        display: none;
+    }
+}
+
 .homepage {
     display: flex;
     justify-content: center;
