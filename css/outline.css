@@ -12,10 +12,12 @@ body {
     box-sizing: border-box;
     background-color: rgba(230, 206, 170, .4);
     width: 100%;
+    margin: auto;
 }
 
 main {
     width: 100vw;
+    margin-right: 1rem;
 }
 
 footer {
@@ -33,34 +35,12 @@ header {
     display: none;
 }
 
-@media screen and (max-width: 1200px) {
-    nav .right , nav .left > .description {
-        display: none;
-    }
-
-    .container {
-        width: 100%;
-        margin-left: 2rem;
-    }
-
-    h1, h2 {
-        font-size: 40px;
-        font-weight: 500;
-    }
-
-    .homepage h1 {
-        width: 100%;
-    }
-
-    .cat {
-        width: 140px;
-        height: 21px;
-        /*display: none*/
-    }
-
-    step {
-        transition: all 0.25s cubic-bezier(0.5, 0.5, 0.5, 0.5) 0.15s;
-    }
+.cat {
+    width: 560px;
+    height: 461px;
+    /*width: 50vw;*/
+    /*height: 50vh;*/
+    /*margin-left: 8rem;*/
 }
 
 .homepage {
@@ -120,7 +100,7 @@ nav {
     display: flex;
     align-items: center;
     text-align: right;
-    padding: 1em 1em 2em 2em;
+    /*padding: 1em 1em 2em 2em;*/
 }
 
 .right a {
@@ -179,14 +159,6 @@ p {
     margin-right: auto;
     max-width: 55vw;
     margin-bottom: 20rem;
-}
-
-.cat {
-    width: 560px;
-    height: 461px;
-    /*width: 50vw;*/
-    /*height: 50vh;*/
-    /*margin-left: 8rem;*/
 }
 
 .homepage {
@@ -711,6 +683,43 @@ footer {
     transform:translateY(0)
 }
 
+/*@media screen and (min-width: 801px) and (max-width: 1100px) {*/
+
+/*}*/
+
+@media screen and (max-width: 1031px) {
+    .homepage {
+        margin-top: 0;
+    }
+    nav .right , nav .left > .description {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+        margin-left: 2rem;
+    }
+
+    h1, h2 {
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .homepage h1, .homepage p {
+        /*text-align: center;*/
+        width: 90vw;
+    }
+
+    .cat {
+        width: 23rem;
+        height: 23rem;
+        /*display: none*/
+    }
+
+    step {
+        transition: all 0.25s cubic-bezier(0.5, 0.5, 0.5, 0.5) 0.15s;
+    }
+}
 
 
 
