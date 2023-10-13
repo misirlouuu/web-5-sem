@@ -41,7 +41,6 @@ header {
     .container {
         width: 100%;
         margin-left: 2rem;
-        margin-right: 0.5rem;
     }
 
     h1, h2 {
@@ -54,9 +53,13 @@ header {
     }
 
     .cat {
-        width: 340px;
-        height: 221px;
+        width: 240px;
+        height: 121px;
         /*display: none*/
+    }
+
+    step {
+        transition: all 0.25s cubic-bezier(0.5, 0.5, 0.5, 0.5) 0.15s;
     }
 }
 
@@ -449,8 +452,8 @@ h3 {
     }
 
     .dog {
-        width: 352px;
-        height: 333px;
+        width: 252px;
+        height: 233px;
         /*display: none;*/
     }
 }
