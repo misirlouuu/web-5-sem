@@ -18,7 +18,7 @@ body {
     box-sizing: border-box;
     background-color: rgba(230, 206, 170, .4);
     width: 98%;
-    margin: auto;
+    margin-left: 2rem;
 }
 
 main {
@@ -45,8 +45,14 @@ header {
         display: none;
     }
 
-    .homepage h1 {
+    .container {
         width: 100%;
+    }
+
+    .homepage h1 {
+        font-weight: 400;
+        width: 100%;
+        font-size: 40px;
     }
 
     .cat {
@@ -439,8 +445,8 @@ h3 {
 
     .about_us h2, .about_us p {
         text-align: center;
-        width: 80%;
-        margin-left: 5rem;
+        width: 100%;
+        /*margin-left: 5rem;*/
     }
 
     .dog {
@@ -596,7 +602,7 @@ i svg:hover {
 
 .gallery {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
