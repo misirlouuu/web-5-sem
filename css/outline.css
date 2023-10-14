@@ -693,6 +693,7 @@ footer {
 @media screen and (max-width: 1050px) {
     .homepage {
         margin-top: 0;
+        margin-left: 1rem;
     }
     nav .menu-items , nav .left > .description {
         display: none;
