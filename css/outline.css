@@ -690,7 +690,7 @@ footer {
 
 /*}*/
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 1050px) {
     .homepage {
         margin-top: 0;
     }
