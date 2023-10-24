@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-* {
-    box-sizing: border-box;
-}
+/** {*/
+/*    box-sizing: border-box;*/
+/*}*/
 
 body {
     overflow-x: hidden;
@@ -12,7 +12,7 @@ body {
     box-sizing: border-box;
     background-color: rgba(230, 206, 170, .4);
     width: 100%;
-    /*margin: auto;*/
+    margin: auto;
 }
 
 main {
@@ -367,7 +367,7 @@ p {
 .step {
     margin: 2rem;
     text-align: center;
-    transition: all 0.25s cubic-bezier(0.5, 0.5, 0.5, 0.5) 0.15s;
+    transition: all 0.25s cubic-bezier(0.5, 0.5, 0.5, 0.5);
     border-radius: 23px;
     willchange: translate;
     box-shadow: 0 1px 2px rgba(0, 0, 0, .1), 0 1px 2px rgba(0, 0, 0, .1);
@@ -554,8 +554,8 @@ svg {
     border: 0;
     outline: 0;
     transition: background 0.5s;
-    margin-top: 0.25rem;
-    margin-right: -0.5rem;
+    padding: 0;
+    margin: 0;
 }
 
 i {
@@ -691,6 +691,12 @@ footer {
         margin-top: 0;
         margin-left: 1rem;
     }
+
+    nav .menu-items {
+        font-family: Merriweather, sans-serif;
+        font-size: 20px;
+    }
+
     nav .menu-items , nav .left > .description {
         display: none;
     }
@@ -725,7 +731,7 @@ footer {
     .navbar .nav-container a {
         text-decoration: none;
         color: #0e2431;
-        font-weight: 500;
+        font-weight: 700;
         font-size: 1.2rem;
         padding: 0.7rem;
     }
@@ -884,6 +890,7 @@ footer {
     font-weight: 400;
     max-width: 480px;
     padding: 1rem;
+    border-radius: 5px;
 }
 
 label {
@@ -901,9 +908,10 @@ input {
     font-size: 18px;
     outline: none;
     border-radius: 4px;
-    positioon: relative;
+    position: relative;
     border: 1px solid rgba(0,0,0,.1);
     width: 100%;
+    background-color: rgba(230, 206, 170, .01);
 }
 
 form {
@@ -917,6 +925,7 @@ form {
 .full-width {
     margin-top: 2rem;
     width: 100%;
+    font-size: 18px;
 }
 
 .make_donation, .become_volunteer {
