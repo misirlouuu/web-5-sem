@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: rgba(230, 206, 170, .4);
+    width: 100%;
+    margin: auto;
+}
+
+main {
+    width: 100vw;
+    margin-right: 1rem;
+}
+
+footer {
+    width: 100vw;
+}
+
+header {
+    position: sticky;
+    /*width: 100vw;*/
+    top: 0;
+    /*background: rgba(230, 206, 170, 1);*/
+}
+
+.navbar {
+    width: 100%;
+}
+
+.containerN {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-container {
+    width: 100%;
+}
+
+.hamburger-lines, .checkbox {
+    display: none;
+}
