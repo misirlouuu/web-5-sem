@@ -5,6 +5,10 @@
 /*    box-sizing: border-box;*/
 /*}*/
 
+html {
+    overflow: auto;
+}
+
 body {
     overflow-x: hidden;
     -webkit-box-sizing: border-box;
@@ -16,6 +20,7 @@ body {
 }
 
 main {
+    /*overflow: hidden;*/
     width: 100vw;
     margin-right: 1rem;
     z-index: -10;
@@ -26,7 +31,7 @@ footer {
 }
 
 header {
-    position: sticky;
+    position: fixed;
     /*width: 100vw;*/
     top: 0;
     /*background: rgba(230, 206, 170, 1);*/
@@ -61,7 +66,7 @@ header {
 .homepage {
     display: flex;
     justify-content: center;
-    margin-top: 7rem;
+    margin-top: 10rem;
     margin-bottom: 11rem;
     flex-wrap: wrap;
 }
@@ -211,17 +216,17 @@ p {
 }
 
 .buttons {
-    /*z-index: -100;*/
-/*    display: flex;*/
-/*    flex-wrap: wrap;*/
-/*}*/
-/*@media screen and (max-width: 1065px) {*/
-/*    .homepage h1, .homepage p {*/
-/*        width: 100%;*/
-/*    }*/
-/*    .container {*/
-/*        align-content: center;*/
-/*    }*/
+    /*z-index: -1;*/
+    /*    display: flex;*/
+    /*    flex-wrap: wrap;*/
+    /*}*/
+    /*@media screen and (max-width: 1065px) {*/
+    /*    .homepage h1, .homepage p {*/
+    /*        width: 100%;*/
+    /*    }*/
+    /*    .container {*/
+    /*        align-content: center;*/
+    /*    }*/
 }
 
 .button {
@@ -652,15 +657,15 @@ footer {
 }
 
 .delay-300 {
-    transition-delay:.3s
+    transition-delay: .3s
 }
 
 .delay-400 {
-    transition-delay:.4s
+    transition-delay: .4s
 }
 
 .delay-500 {
-    transition-delay:.5s
+    transition-delay: .5s
 }
 
 .fromLeft {
@@ -677,13 +682,15 @@ footer {
 .text-block {
     transition: all .7s ease;
     opacity: 0;
-    transform:translateY(40px);
+    transform: translateY(40px);
 }
 
 .text-block-animate {
     opacity: 1;
-    transform:translateY(0)
+    transform: translateY(0)
 }
+
+
 
 /*.step:nth-child(odd) {*/
 /*    background-color: #DE9D9B;*/
@@ -692,9 +699,54 @@ footer {
 
 /*}*/
 
+@media screen and (max-width: 955px) {
+
+    .about_us h2, .about_us p {
+        z-index: -100;
+        text-align: center;
+        width: 100%;
+        /*margin-left: 5rem;*/
+    }
+
+    .dog {
+        width: 23rem;
+        height: 23rem;
+        /*display: none;*/
+        margin-right: 0;
+    }
+
+    .about_information p, .about_information h2 {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        text-align: left;
+    }
+}
+
 @media screen and (max-width: 1050px) {
+    h1, h2 {
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .homepage h1, .homepage p {
+        z-index: -100;
+        /*text-align: center;*/
+        width: 90vw;
+    }
+
+    .cat {
+        width: 23rem;
+        height: 23rem;
+        /*display: none*/
+    }
+
+    .step {
+        transition: all 0.25s cubic-bezier(0.5, 0.5, 0.5, 0.5);
+    }
+
     .homepage {
-        margin-top: 0;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
         margin-left: 1rem;
     }
 
@@ -703,7 +755,7 @@ footer {
         font-size: 20px;
     }
 
-    nav .menu-items , nav .left > .description {
+    nav .menu-items, nav .left > .description {
         display: none;
     }
 
@@ -714,6 +766,8 @@ footer {
     }
 
     .navbar {
+        position: sticky;
+        top: 0;
         width: 100%;
         box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
     }
@@ -742,7 +796,7 @@ footer {
         padding: 0.7rem;
     }
 
-    .navbar .nav-container a:hover{
+    .navbar .nav-container a:hover {
         font-weight: bolder;
     }
 
@@ -782,7 +836,7 @@ footer {
         height: 4px;
         width: 100%;
         border-radius: 10px;
-        background: #0e2431;
+        background: #202020;
     }
 
     .nav-container .hamburger-lines .line1 {
@@ -811,6 +865,7 @@ footer {
         padding-left: 50px;
         transition: transform 0.5s ease-in-out;
         text-align: center;
+        z-index: 100;
     }
 
     .navbar .menu-items li {
@@ -835,56 +890,24 @@ footer {
         transform: rotate(-45deg);
     }
 
-    .nav-container input[type="checkbox"]:checked ~ .logo{
+    .nav-container input[type="checkbox"]:checked ~ .logo {
         display: none;
     }
 
-    h1, h2 {
-        font-size: 40px;
-        font-weight: 500;
+    .nav-container input[type="checkbox"]:checked ~ .info, .social_networks, .step, .pet, .buttons, .about_us {
+        z-index: 0;
     }
 
-    .homepage h1, .homepage p {
-        z-index: -100;
-        /*text-align: center;*/
-        width: 90vw;
-    }
 
-    .cat {
-        width: 23rem;
-        height: 23rem;
-        /*display: none*/
-    }
-
-    .step {
-        transition: all 0.25s cubic-bezier(0.5, 0.5, 0.5, 0.5);
-    }
-
-    .info, .social_networks, .step, .pet, .buttons, .about_us {
-        z-index: -100;
-    }
-}
-
-@media screen and (max-width: 955px) {
-
-    .about_us h2, .about_us p {
-        z-index: -100;
-        text-align: center;
-        width: 100%;
-        /*margin-left: 5rem;*/
-    }
-
-    .dog {
-        width: 23rem;
-        height: 23rem;
-        /*display: none;*/
-        margin-right: 0;
-    }
+    /*.info, .social_networks, .step, .pet, .buttons, .about_us {*/
+    /*    z-index: -100;*/
+    /*}*/
 }
 
 
 /* help.html */
 .make_donation, .become_volunteer {
+    margin-top: 4rem;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -907,7 +930,7 @@ footer {
 .pad.shadow {
     z-index: -100;
     box-shadow: 0 10px 40px rgba(0, 0, 0, .2);
-    font-family: "Merriweather",sans-serif;
+    font-family: "Merriweather", sans-serif;
     font-weight: 400;
     max-width: 480px;
     padding: 1rem;
@@ -923,14 +946,14 @@ label {
 }
 
 input {
-    font-family: "Merriweather",sans-serif;
+    font-family: "Merriweather", sans-serif;
     font-weight: 400;
     padding: 15px 16px 16px;
     font-size: 18px;
     outline: none;
     border-radius: 4px;
     position: relative;
-    border: 1px solid rgba(0,0,0,.1);
+    border: 1px solid rgba(0, 0, 0, .1);
     background-color: rgba(230, 206, 170, .01);
 }
 
@@ -948,6 +971,28 @@ form {
     font-size: 18px;
 }
 
+/* about.html */
+.about_information {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about_information h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.about_information p {
+    font-size: 16px;
+    line-height: 1.625;
+    margin-bottom: 12px;
+    font-weight: 400;
+    max-width: 675px;
+    z-index: -5;
+}
 
 
 
