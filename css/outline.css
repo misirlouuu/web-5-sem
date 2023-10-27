@@ -906,14 +906,12 @@ footer {
 }
 
 .make_donation p, .become_volunteer p {
-    z-index: -100;
     margin-bottom: 2rem;
     margin-top: 1rem;
     text-align: center;
 }
 
 .pad.shadow {
-    z-index: -100;
     box-shadow: 0 10px 40px rgba(0, 0, 0, .2);
     font-family: "Merriweather", sans-serif;
     font-weight: 400;
@@ -976,7 +974,6 @@ form {
     margin-bottom: 12px;
     font-weight: 400;
     max-width: 675px;
-    z-index: -5;
 }
 
  /*cats.html */
