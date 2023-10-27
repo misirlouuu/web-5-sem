@@ -34,6 +34,7 @@ header {
     position: fixed;
     /*width: 100vw;*/
     top: 0;
+    z-index: 999;
     /*background: rgba(230, 206, 170, 1);*/
 }
 
@@ -700,9 +701,7 @@ footer {
 /*}*/
 
 @media screen and (max-width: 955px) {
-
     .about_us h2, .about_us p {
-        z-index: -100;
         text-align: center;
         width: 100%;
     }
@@ -846,11 +845,6 @@ footer {
     .nav-container .hamburger-lines .line3 {
         transform-origin: 0% 100%;
         transition: transform 0.4s ease-in-out;
-    }
-
-    header {
-        position: fixed;
-        z-index: 999;
     }
 
     .navbar .menu-items {

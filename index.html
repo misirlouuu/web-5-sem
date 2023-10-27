@@ -11,7 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="heart.js"></script>
+    <script src="js/heart.js"></script>
+    <script src="js/loading-time.js"></script>
 
     <link rel="stylesheet" href="css/outline.css">
 </head>
@@ -21,19 +22,19 @@
     <nav>
         <div class="navbar">
             <div class="containerN nav-container">
-                        <div class="left">
-                            <div class="logo">
-                                <img
-                                        class="logo"
-                                        src="img/pet-lover.svg"
-                                        alt="logo"
-                                />
-                            </div>
-                            <div class="description">
-                                <span>Приют для животных</span>
-                                <span>Название</span>
-                            </div>
-                        </div>
+                <div class="left">
+                    <div class="logo">
+                        <img
+                                class="logo"
+                                src="img/pet-lover.svg"
+                                alt="logo"
+                        />
+                    </div>
+                    <div class="description">
+                        <span>Приют для животных</span>
+                        <span>Название</span>
+                    </div>
+                </div>
                 <input class="checkbox" type="checkbox" name="" id=""/>
                 <div class="hamburger-lines">
                     <span class="line line1"></span>
@@ -68,8 +69,12 @@
             </p>
             <div class="buttons">
                 <div class="buttons">
-                    <a href=volunteer.html><button class="button volunteer"><span>Стать волонтёром</span></button></a>
-                    <a href=help.html><button class="button donation"><span>Сделать пожертвование</span></button></a>
+                    <a href=volunteer.html>
+                        <button class="button volunteer"><span>Стать волонтёром</span></button>
+                    </a>
+                    <a href=help.html>
+                        <button class="button donation"><span>Сделать пожертвование</span></button>
+                    </a>
                 </div>
             </div>
 
@@ -319,10 +324,12 @@
                 <img class="icon" src="img/vk.svg" alt="vk">
             </a>
         </div>
-        <!--        <a href="https://t.me/misirlouuu"><svg></svg></a>-->
-        <!--        <a href="mailto:info@gmail.com">info@gmail.com</a>-->
     </div>
 
+    <div class="load-time">
+        <h6>page load time:</h6>
+        <p class="load-time" id="load-time"></p>
+    </div>
 </footer>
 </body>
 <!--<body>-->
