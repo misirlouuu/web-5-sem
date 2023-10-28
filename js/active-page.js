@@ -5,12 +5,8 @@ function setCurrentPage() {
     let item
     for (item = navbar.firstElementChild; item; item = item.nextElementSibling) {
         if (item.getAttribute('href') === currentPage) {
-            if (item.getAttribute('class') === "help")
-            {
-                item.setAttribute('class', 'help active')
-                break
-            }
-            item.setAttribute('class', 'active')
+            let value = item.getAttribute('class')
+            item.setAttribute('class', value + ' active')
             break
         }
     }
