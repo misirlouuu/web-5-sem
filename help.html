@@ -11,8 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="js/heart.js"></script>
     <script src="js/active-page.js"></script>
+    <script src="js/make-donation.js"></script>
 
     <link rel="stylesheet" href="css/outline.css">
 </head>
@@ -46,7 +46,7 @@
                     <a href="/web-5-sem/about.html">О нас</a>
                     <a href="/web-5-sem/cats.html">Котики</a>
                     <a href="#">Новости</a>
-                    <a href="/web-5-sem/volunteer.html" class="help">
+                    <a href="/web-5-sem/help.html" class="help">
                         <img
                                 class="paw"
                                 src="img/paw.svg"
@@ -64,8 +64,8 @@
     <section class="make_donation">
         <h1>Сделать пожертвование</h1>
         <p>Lorem ipsum lorem ipsum lorem ipsum</p>
-        <div class="pad shadow">
-            <form method="post">
+        <div class="pad shadow" id="first-form">
+            <form id="uncompleted-new-donation-form">
                 <div>
                     <div>
                         <label>Ваше имя</label>
@@ -84,16 +84,55 @@
                     </div>
                     <input type="text" placeholder="Email"></input>
                 </div>
+                <button type="button" class="button volunteer full-width" onclick="showSecondForm()"><span>Помочь</span>
+                </button>
+            </form>
+        </div>
+
+        <div class="pad shadow" id="second-form" style="display: none">
+            <form id="new-donation-form">
+                <div>
+                    <div>
+                        <label>Номер карты</label>
+                    </div>
+                    <input type="text" placeholder="Номер карты"></input>
+                </div>
+                <div>
+                    <div>
+                        <label>Срок действия</label>
+                    </div>
+                    <input type="text" placeholder="ММ / ГГ"></input>
+                </div>
+                <div>
+                    <div>
+                        <label>CVV</label>
+                    </div>
+                    <input type="text" placeholder="CVV"></input>
+                </div>
                 <div>
                     <div class>
                         <label>Сумма пожертвования</label>
                     </div>
-                    <input type="text" placeholder="Сумма пожертвования"></input>
+                    <input type="text" id="content" placeholder="Сумма пожертвования"></input>
                 </div>
                 <button type="submit" class="button volunteer full-width"><span>Помочь</span></button>
             </form>
         </div>
+
+        <script>
+            function showSecondForm() {
+                document.getElementById('second-form').style.display = 'block';
+                document.getElementById('first-form').style.display = 'none';
+            }
+        </script>
     </section>
+
+    <section class="donations-wrapper">
+        <div class="donations" id="donations">
+            <!--runtime generated donations-->
+        </div>
+    </section>
+
 </main>
 
 <footer>

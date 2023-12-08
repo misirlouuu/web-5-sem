@@ -971,6 +971,12 @@ form {
     margin-bottom: 2rem;
 }
 
+.donations {
+    display: flex;
+}
+
+
+
 /* about.html */
 .about_information {
     margin-top: 7rem;

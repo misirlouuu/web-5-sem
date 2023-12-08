@@ -13,6 +13,7 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="js/heart.js"></script>
     <script src="js/active-page.js"></script>
+    <script src="js/make-donation.js"></script>
 
     <link rel="stylesheet" href="css/outline.css">
 </head>
@@ -46,7 +47,7 @@
                     <a href="/web-5-sem/about.html">О нас</a>
                     <a href="/web-5-sem/cats.html">Котики</a>
                     <a href="#">Новости</a>
-                    <a href="/web-5-sem/volunteer.html" class="help">
+                    <a href="/web-5-sem/help.html" class="help">
                         <img
                                 class="paw"
                                 src="img/paw.svg"
@@ -64,29 +65,34 @@
     <section class="become_volunteer">
         <h1>Стать волонтёром</h1>
         <p>Lorem ipsum lorem ipsum lorem ipsum</p>
-        <div class="pad shadow">
-            <form method="post">
-                <div>
+        <div class="become-volunteer-form">
+            <div class="pad shadow">
+                <form method="post" id="new-become-volunteer-form">
                     <div>
-                        <label>Ваше имя</label>
+                        <div>
+                            <label>Ваше имя</label>
+                        </div>
+                        <input type="text" placeholder="Имя"></input>
                     </div>
-                    <input type="text" placeholder="Имя"></input>
-                </div>
-                <div>
                     <div>
-                        <label>Ваша фамилия</label>
+                        <div>
+                            <label>Ваша фамилия</label>
+                        </div>
+                        <input type="text" placeholder="Фамилия"></input>
                     </div>
-                    <input type="text" placeholder="Фамилия"></input>
-                </div>
-                <div>
                     <div>
-                        <label>Email</label>
+                        <div>
+                            <label>Email</label>
+                        </div>
+                        <input type="text" placeholder="Email"></input>
                     </div>
-                    <input type="text" placeholder="Email"></input>
-                </div>
-                <button type="submit" class="button volunteer full-width"><span>Стать волонтёром</span></button>
-            </form>
+                    <button type="submit" id="become-volunteer-submit" class="button volunteer full-width">
+                        <span>Стать волонтёром</span>
+                    </button>
+                </form>
+            </div>
         </div>
+
     </section>
 </main>
 
