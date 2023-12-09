@@ -13,6 +13,7 @@ body {
     background-color: rgba(230, 206, 170, .4);
     width: 100%;
     margin: auto;
+    font-family: "Merriweather", sans-serif;
 }
 
 main {
@@ -973,8 +974,27 @@ form {
 
 .donations {
     display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
+.donation-box {
+    margin: 3rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.user-name {
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.user-text {
+    font-size: 20px;
+    font-weight: 400;
+}
 
 
 /* about.html */

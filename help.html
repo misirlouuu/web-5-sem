@@ -61,7 +61,7 @@
 </header>
 
 <main>
-    <section class="make_donation">
+    <section class="make_donation" id="make-donation">
         <h1>Сделать пожертвование</h1>
         <p>Lorem ipsum lorem ipsum lorem ipsum</p>
         <div class="pad shadow" id="first-form">
@@ -70,13 +70,13 @@
                     <div>
                         <label>Ваше имя</label>
                     </div>
-                    <input type="text" placeholder="Имя"></input>
+                    <input type="text" placeholder="Имя" id="name"></input>
                 </div>
                 <div>
                     <div>
                         <label>Ваша фамилия</label>
                     </div>
-                    <input type="text" placeholder="Фамилия"></input>
+                    <input type="text" placeholder="Фамилия" id="surname"></input>
                 </div>
                 <div>
                     <div>
@@ -113,9 +113,10 @@
                     <div class>
                         <label>Сумма пожертвования</label>
                     </div>
-                    <input type="text" id="content" placeholder="Сумма пожертвования"></input>
+                    <input type="text" id="amount" placeholder="Сумма пожертвования"></input>
                 </div>
-                <button type="submit" class="button volunteer full-width"><span>Помочь</span></button>
+                <button type="submit" class="button volunteer full-width" onclick="showSuccessModal()"><span>Помочь</span>
+                </button>
             </form>
         </div>
 
@@ -123,6 +124,19 @@
             function showSecondForm() {
                 document.getElementById('second-form').style.display = 'block';
                 document.getElementById('first-form').style.display = 'none';
+            }
+        </script>
+    </section>
+
+    <section class="make_donation">
+        <div>
+            <h1 id="success-donation" style="display: none">Спасибо за пожертвование!</h1>
+        </div>
+
+        <script>
+            function showSuccessModal() {
+                document.getElementById('make-donation').style.display = 'none';
+                document.getElementById('success-donation').style.display = 'block';
             }
         </script>
     </section>
